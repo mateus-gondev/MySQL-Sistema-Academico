@@ -1,6 +1,7 @@
 CREATE DATABASE sistemaacademico;
 USE sistemaacademico;
 
+
 -- CREATE TABLE
 CREATE TABLE Usuario (
 id_usuario INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -269,4 +270,5 @@ JOIN Usuario ON Aluno.id_usuario = Usuario.id_usuario
 JOIN Matricula ON Aluno.id_matricula = Matricula.id_matricula
 JOIN Turma ON Matricula.id_turma = Turma.id_turma
 JOIN Curso ON Matricula.id_curso = Curso.id_curso;
+
 
